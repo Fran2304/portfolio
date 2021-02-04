@@ -58,7 +58,7 @@ a {
   padding-bottom: 30px;
   padding-top: 10rem;
   background-color: #340484;
-  background-image: url("/images/table.png");
+  background-image: url("./images/table.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
