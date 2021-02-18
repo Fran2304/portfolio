@@ -47,6 +47,11 @@ ul {
   justify-content: space-evenly;
 }
 
+li:hover{
+  font-size: 30px;
+  font-weight: 800;
+}
+
 a {
   text-decoration: none;
   color: #fdfdfd;
@@ -82,12 +87,24 @@ h2 {
   margin-bottom: 10px;
 }
 
+
+/* Projects*/ 
 h3 {
   color: #7b63a3;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
+h3::after{
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 100%;
+  margin-right: -99%;
+  margin-left: 1px;
+  border-top: 5px solid #7B63A3;
+  border-radius: 2px
+}
 .banner-text > p {
   font-size: 30px;
 }
@@ -105,6 +122,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .about-body > img {
@@ -112,6 +130,8 @@ h3 {
   height: 250px;
   border-radius: 55%;
   margin-right: 60px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-body-text {
@@ -214,6 +234,9 @@ button {
   width: 100px;
   margin: 5px;
 }
+.icon-skill:hover{
+  width: 120px;
+}
 
 /* Section projects */
 .projects {
@@ -292,7 +315,7 @@ h4 {
 .contact-types {
   display: flex;
   width: 40%;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 40px;
   font-size: 20px;
   color: #808080;
@@ -300,16 +323,27 @@ h4 {
 
 .contact-types > div{
   display:flex;
+  width: 50%;
   justify-content: center;
   align-items: center;
 }
 
+.contact-types > div > a{
+  width: 20%;
+}
+
 .email, .linkedin{
-  width: 15%
+  min-width: 40px;
+  max-width: 55px;
 }
 footer {
   background-color: #14053a;
   text-align: center;
   color: #fdfdfd;
   padding: 20px;
+}
+
+footer p{
+  font-size: 20px;
+  font-weight: 300;
 }
